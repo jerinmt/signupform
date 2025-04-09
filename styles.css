@@ -5,20 +5,105 @@
 }
 body {
     line-height: 1.5;
-}
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-input, button, textarea, select {
-    font: inherit;
+    display: flex;
+    margin: 0% 15%;
+    background-color: rgb(37, 37, 37);
 }
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
 p {
     text-wrap: pretty;
+    line-height: 1.2;
+    font-weight: bolder;
+    margin: 0px 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+.left {
+    flex: 1 0 initial;
+    position: relative;
+    width: 350px;
+    min-width: 300px;
+}
+.backgroundPic {
+    width: 350px;
+    min-width: 300px;
+    height: 100vh;
+}
+.logo {
+    position: absolute;
+    width: 350px;
+    min-width: 300px;
+    top: 25%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoPic {
+    width:50px;
+    height: 66px;
+}
+.logoText {
+    color: white;
+    font-size: 54px;
+    font-weight: 900;
+}
+.right {
+    flex: 1;
+    align-items: flex-start;
+    background-color: rgb(240, 245, 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+form {
+    background-color: white;
+    padding: 15px 25px 25px 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    box-shadow: 0px 3px gray;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: gray;
+}
+.loginText {
+    font-size: small;
+}
+button {
+    margin-left: 25px;
+    background-color: #596D48;
+    padding: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 3px gray;
+    font-weight: bold;
+    color: white;
+}
+.formRows {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+h4 {
+    margin-bottom: 20px;
+}
+label {
+    font-size: small;
+    font-weight: 400;
+}
+input {
+    border: 1px solid #E5E7EB;
+}
+input:focus {
+    border: 3px solid rgb(23, 23, 238);
+}
+input:invalid {
+    border: 3px solid red;
 }

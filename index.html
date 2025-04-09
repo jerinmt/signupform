@@ -7,6 +7,51 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="left">
+        <img src="./assets/halie-west-25xggax4bSA-unsplash.jpg" alt="A picture of a tree" class="backgroundPic">
+        <div class="logo">
+            <img src="./assets/odin-lined.png" alt="Logo of Odin" class="logoPic">
+            <h1 class="logoText">ODIN</p>
+        </div>
+    </div>
+    <div class="right">
+        <p>This is not a real online service! You know you need something like this in your real life to help you realize your deepest dreams.<br>Sign up now to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+        <form action="#" method="#">
+            <h4>Let's do this</h4>
+            <div class="formRows">
+                <div>
+                    <label for="firstName">First Name</label><br>
+                    <input type="text" id="firstName" name="firstName" minlength="2" placeholder="John">
+                </div>
+                <div>
+                    <label for="lastName">Last Name</label><br>
+                    <input type="text" id="lastName" name="lastName" minlength="2" placeholder="Smith">
+                </div>
+            </div>
+            <div class="formRows">
+                <div>
+                    <label for="emailId">Email</label><br>
+                    <input type="email" id="emailId" name="emailId" placeholder="example@example.com">
+                </div>
+                <div>
+                    <label for="phoneNum">Phone Number</label><br>
+                    <input type="tel" id="phoneNum" name="phoneNum" minlength="10" maxlength="10" placeholder="9876543210">    
+                </div>         
+            </div>
+            <div class="formRows">
+                <div>
+                    <label for="password">Password</label><br>
+                    <input type="password" id="password" name="password" required minlength="6">    
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm password</label><br>
+                    <input type="password" id="confirmPassword" required minlength="6">
+                </div>
+            </div>
+        </form>
+        <button type="button">Create Account</button>
+        <p class="loginText">Already have an account?<a href="#">Log in</a></p>
+    </div>
 </body>
 </html>
