@@ -112,3 +112,16 @@ input:focus {
 input:invalid {
     border: 3px solid red;
 }
+input:focus:invalid {
+    outline: none;
+}
+.error {
+    width: 100%;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+}
+.error.active {
+    padding: 0.3em;
+}
