@@ -23,11 +23,13 @@
             <div class="formRows">
                 <div>
                     <label for="firstName">First Name</label><br>
-                    <input type="text" id="firstName" name="firstName" minlength="2" placeholder="John">
+                    <input type="text" id="firstName" name="firstName" minlength="2" placeholder="John" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div>
                     <label for="lastName">Last Name</label><br>
-                    <input type="text" id="lastName" name="lastName" minlength="2" placeholder="Smith">
+                    <input type="text" id="lastName" name="lastName" minlength="2" placeholder="Smith" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
             </div>
             <div class="formRows">
@@ -46,13 +48,13 @@
                     <label for="country">Country</label><br>
                     <select id="country" name="country">
                         <option value="India">India</option>
-                        <option value="India">Canada</option>
-                        <option value="India">Germany</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Germany">Germany</option>
                     </select>
                 </div>
                 <div>
                     <label for="postCode">Post Code</label><br>
-                    <input type="number" id="postCode" name="postCode" minlength="5" maxlength="8" placeholder="666666">    
+                    <input type="text" id="postCode" name="postCode" placeholder="666666">    
                 </div>         
             </div>
             <div class="formRows">
